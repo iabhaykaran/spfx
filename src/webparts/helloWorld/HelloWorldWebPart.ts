@@ -9,13 +9,10 @@ import "@pnp/sp/presets/all";
 import "@pnp/sp/webs";
 import "@pnp/sp/sites";
 import "@pnp/sp/site-users/web";
-// import { SPFI } from "@pnp/sp";
-// import { sp } from "@pnp/sp/presets/all";
 import "@pnp/sp/webs";
 import "@pnp/sp/lists";
 import "@pnp/sp/items";
 import { getSP } from "./loc/pnpjsConfig";
-// React Component
 import EmployeeCrud from "./components/EmployeeCrud";
 import { IEmployeeCrudProps } from "./components/IEmployeeCrudProps";
 
@@ -25,11 +22,7 @@ export default class EmployeeCrudWebPart extends BaseClientSideWebPart<IEmployee
   public async onInit(): Promise<void> {
     await super.onInit();
 
-    // Setup PnPjs with SPFx context
-    // SPFI.setup({
-    //   spfxContext: this.context,
-    // });
-
+   
     await super.onInit();
     getSP(this.context);
   }

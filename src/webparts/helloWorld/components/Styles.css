@@ -4,13 +4,123 @@
   padding: 0;
 }
 
-.card {
-  background-color: aquamarine;
-  border-radius: 10px;
-  /* width: 150px; */
-  padding: 30px;
-
-  /* box-shadow: 15px 10px 55px 5px  solid grey; */
+.btn {
+  margin: 20px;
+  background-color: brown;
+  color: #ede4e4;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
+.gbtn {
+  /* margin: 20px; */
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
+.card {
+  background-color: rgb(229, 233, 229);
+  border-radius: 10px;
+  padding: 10px;
+
+  list-style: none;
+}
+.subcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid rgb(221, 221, 221);
+  margin: 10px;
+  border-radius: 15px;
+  list-style: none;
+}
+
+.form {
+  /* padding: 20px; */
+  margin: 20px;
+  background-color: rgb(196, 238, 255);
+  /* height: 250px; */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input {
+  border-radius: 5px;
+  height: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 90%;
+  overflow: auto;
+  position: relative;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+/* Add this to your Styles.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  height: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.modal iframe,
+.modal embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
